@@ -1,0 +1,25 @@
+{
+    "usuarios": {
+        "123": {
+            "Nombres": "Apple",
+            "Apellidos": "Manzana",
+            "Direccion": "frutas",
+            "Acudiente": "mamad de apple",
+            "Contacto": "314",
+            "Telefono fijo": "54665465",
+            "Proceso": "Inscrito",
+            "Riesgo": false,
+            "Resultado prueba": 106.5
+        },
+        "895": {
+            "Nombres": "Majo",
+            "Apellidos": "Gonzalez",
+            "Direccion": "casa de majo",
+            "Acudiente": "mami de majo",
+            "Contacto": "3156465768",
+            "Telefono fijo": "678675",
+            "Proceso": "Inscrito",
+            "Riesgo": false
+        }
+    }
+}
