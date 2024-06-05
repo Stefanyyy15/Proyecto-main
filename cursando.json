@@ -11,13 +11,10 @@
                     "Prueba practica(Proyecto)": 23
                 },
                 "trainers": "Juan Marino"
-            
-
-                }
             },
             "789": {
                 "Proceso": "Cursando",
-                "Riesgo": false,
+                "Riesgo": true,
                 "Resultado prueba": 94.5,
                 "Notas": {
                     "Quizes y Trabajos": 0,
@@ -33,9 +30,9 @@
                 "Riesgo": false,
                 "Resultado prueba": 106.5,
                 "Notas": {
-                    "Quizes y Trabajos": 0,
-                    "Prueba teorica": 0,
-                    "Prueba practica(Proyecto)": 0
+                    "Quizes y Trabajos": 89,
+                    "Prueba teorica": 78,
+                    "Prueba practica(Proyecto)": 67
                 },
                 "trainers": "Juan Marino"
             }
@@ -51,7 +48,19 @@
                     "Prueba practica(Proyecto)": 0
                 },
                 "trainers": "Juan Marino"
+            },
+            "444": {
+                "Proceso": "Cursando",
+                "Riesgo": false,
+                "Resultado prueba": 110.5,
+                "Notas": {
+                    "Quizes y Trabajos": 65,
+                    "Prueba teorica": 78,
+                    "Prueba practica(Proyecto)": 94
+                },
+                "trainers": "Roberto Hernandez"
             }
         },
         "Maincra": {}
     }
+}

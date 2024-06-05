@@ -2,20 +2,21 @@ from menu import *
 from camper import *
 from datos import *
 from coordinador import *
+from trainer import *
 
-ruta_estudiantes_registrados="registrados.json"
-datos_estudiantes_registrados=cargar_datos(ruta_estudiantes_registrados)
+ruta_estudiantes_registrados= "registrados.json"
+datos_estudiantes_registrados= cargar_datos(ruta_estudiantes_registrados)
 
-ruta_estudiantes_aprobados="aprobados.json"
+ruta_estudiantes_aprobados= "aprobados.json"
 datos_estudiantes_aprobados= cargar_datos(ruta_estudiantes_aprobados)
 
-ruta_estudiantes_cursando="cursando.json"
+ruta_estudiantes_cursando= "cursando.json"
 datos_estudiantes_cursando= cargar_datos(ruta_estudiantes_cursando)
 
-ruta_de_rutas="rutas.json"
-datos_de_rutas=cargar_datos(ruta_de_rutas)
+ruta_de_rutas= "rutas.json"
+datos_de_rutas= cargar_datos(ruta_de_rutas)
 
-ruta_trainers="trainer.json"
+ruta_trainers= "trainer.json"
 datos_trainers= cargar_datos(ruta_trainers)
 
 while True:
@@ -31,9 +32,16 @@ while True:
                 menu_camper()
                 opc = pedir_opc()
                 if opc==1:
-                    ver_notas
+                    ver_notas()
+                elif opc==2:
+                    print("Horario")
             elif opc==2:
                 menu_trainer()
+                opc= pedir_opc()
+                if opc==1:
+                    print("Horario")
+                if opc==2:
+                    modificar_notas(datos_estudiantes_cursando)
             elif opc==3:
                 menu_coordinador()
                 opc= pedir_opc()
@@ -43,19 +51,19 @@ while True:
                 elif opc==2:
                     asignar_ruta(datos_estudiantes_aprobados, datos_estudiantes_cursando)
                 elif opc==3:
-                    print("no esite")  
+                    crear_ruta(datos_estudiantes_cursando)  
                 elif opc==4:
-                    print("no esite")    
+                    agregar_trainer(datos_trainers)
                 elif opc==5:
-                    crear_trainer(datos_trainers)
-                elif opc==6:
                     asignar_trainer(datos_trainers, datos_estudiantes_cursando)
-
-
+                elif opc==6:
+                    definir_riesgo(datos_estudiantes_cursando)
         elif opc==3:
             pruebas_admision(datos_estudiantes_registrados)
         else:
             print("Opción no válida.")
+
+
 
         guardar_datos(datos_estudiantes_registrados, ruta_estudiantes_registrados)
         guardar_datos(datos_estudiantes_aprobados, ruta_estudiantes_aprobados)

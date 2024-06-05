@@ -1,13 +1,13 @@
-import datos
+from datos import *
 
-ruta_estudiantes_registrados="registrados.json"
-datos_estudiantes_registrados=datos.cargar_datos(ruta_estudiantes_registrados)
+ruta_estudiantes_registrados= "registrados.json"
+datos_estudiantes_registrados=cargar_datos(ruta_estudiantes_registrados)
 
-ruta_estudiantes_aprobados="aprobados.json"
-datos_estudiantes_aprobados= datos.cargar_datos(ruta_estudiantes_aprobados)
+ruta_estudiantes_aprobados= "aprobados.json"
+datos_estudiantes_aprobados=cargar_datos(ruta_estudiantes_aprobados)
 
-ruta_estudiantes_cursando="cursando.json"
-datos_estudiantes_cursando= datos.cargar_datos(ruta_estudiantes_cursando)
+ruta_estudiantes_cursando= "cursando.json"
+datos_estudiantes_cursando= cargar_datos(ruta_estudiantes_cursando)
 
 def registrar_camper(datos):
     global doc
@@ -39,16 +39,15 @@ def modificar_camper (datos):
     else:
         print("El documento no corresponde a ningun camper")
 
-
 def aprobar_camper(datos_estudiantes_registrados, datos_estudiantes_aprobados):
     if doc in datos_estudiantes_registrados["usuarios"]:
         roxane=datos_estudiantes_registrados["usuarios"][doc]
         if roxane["Proceso"]=="Aprobado":
-            datos.guardar_datos(datos_estudiantes_registrados, ruta_estudiantes_registrados)
+            guardar_datos(datos_estudiantes_registrados, ruta_estudiantes_registrados)
             datos_estudiantes_aprobados["usuarios"][doc] = roxane
             datos_estudiantes_registrados["usuarios"].pop(doc, None)
-            datos.guardar_datos(datos_estudiantes_registrados, ruta_estudiantes_aprobados)
-            datos.guardar_datos(datos_estudiantes_registrados, ruta_estudiantes_registrados)  
+            guardar_datos(datos_estudiantes_registrados, ruta_estudiantes_aprobados)
+            guardar_datos(datos_estudiantes_registrados, ruta_estudiantes_registrados)  
             print("Estudiante aprobado movido exitosamente de registrados a aprobados.")
 
 def ver_notas():
@@ -57,17 +56,17 @@ def ver_notas():
     print ("¿En que ruta esta?\n1.NodeJs\n2.Java\n3.NetCore")
     opc=int(input())
     if opc==1:
-        notas = datos_estudiantes_cursando["NodeJs"][doc].get("Notas")
+        notas = datos_estudiantes_cursando["Rutas"]["NodeJs"][doc].get("Notas")
         print("A continuacion se le muestran sus notas: ")
         for clave, valor in notas.items():
             print (clave, valor )
     elif opc==2:
-        notas = datos_estudiantes_cursando["Java"][doc].get("Notas")
+        notas = datos_estudiantes_cursando["Rutas"]["Java"][doc].get("Notas")
         print("A continuacion se le muestran sus notas: ")
         for clave, valor in notas.items():
             print (clave, valor )
     elif opc==3:
-        notas = datos_estudiantes_cursando["NetCore"][doc].get("Notas")
+        notas = datos_estudiantes_cursando["Rutas"]["NetCore"][doc].get("Notas")
         print("A continuacion se le muestran sus notas: ")
         for clave, valor in notas.items():
             print (clave, valor )
@@ -75,8 +74,28 @@ def ver_notas():
         print("Valor no encontrado!")
 
     
-def ver_horario():
+def ver_horario(datos_estudiantes_cursando):
     print("Digite su documento: ")
     doc=input()
-    datos_estudiantes_cursando
+    print ("¿En que ruta esta?\n1.NodeJs\n2.Java\n3.NetCore")
+    opc=int(input())
+    if opc==1:
+        ruta = datos_estudiantes_cursando["Rutas"].get("NodeJs")
+        print (ruta)
+        print("A continuacion se le muestran sus notas: ")
+        for clave, valor in notas.items():
+            print (clave, valor )
+    elif opc==2:
+        notas = datos_estudiantes_cursando["Rutas"]["Java"][doc].get("Notas")
+        print("A continuacion se le muestran sus notas: ")
+        for clave, valor in notas.items():
+            print (clave, valor )
+    elif opc==3:
+        notas = datos_estudiantes_cursando["Rutas"]["NetCore"][doc].get("Notas")
+        print("A continuacion se le muestran sus notas: ")
+        for clave, valor in notas.items():
+            print (clave, valor )
+    else:
+        print("Valor no encontrado!")
 
+ver_horario(datos_estudiantes_cursando)
