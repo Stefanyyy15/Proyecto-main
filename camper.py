@@ -98,4 +98,3 @@ def ver_horario(datos_estudiantes_cursando):
     else:
         print("Valor no encontrado!")
 
-ver_horario(datos_estudiantes_cursando)

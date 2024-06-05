@@ -1,4 +1,8 @@
 from datos import *
+from menu import pedir_opc
+
+ruta_estudiantes_registrados= "registrados.json"
+datos_estudiantes_registrados= cargar_datos(ruta_estudiantes_registrados)
 
 ruta_estudiantes_aprobados= "aprobados.json"
 datos_estudiantes_aprobados= cargar_datos(ruta_estudiantes_aprobados)
@@ -143,4 +147,17 @@ def definir_riesgo(datos_estudiantes_cursando):
 
 def leer_registrados(datos_estudiantes_registrados):
     for i,a in datos_estudiantes_registrados["usuarios"].items():
-        print(f"")
+        print(f" ID: {i} -- Nombre: {a['Nombres']}")
+
+def leer_aprobados(datos_estudiantes_aprobados):
+    for i,a in datos_estudiantes_aprobados["usuarios"].items():
+        print(f" ID: {i} -- Nombre: {a['Nombres']}")
+
+def leer_trainers(datos_trainers):
+    for i,a in datos_trainers["Trainers"].items():
+        print(f" ID: {i} -- Nombre: {a['Nombre']}")
+
+
+def leer_rutas(datos_estudiantes_cursando):
+    for i,a in datos_estudiantes_cursando["Rutas"].items():
+        print(f" Ruta: {i}")

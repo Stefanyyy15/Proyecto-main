@@ -10,8 +10,8 @@ def pedir_opc():
 def menu_principal ():
     print("""                                  CAMPUSLANDS                         
                           Bienvenido a la plataforma!
-                      1.Registrarse  2.Ingresar  3.Pruebas""")
-
+                      1.Registrarse  2.Ingresar  3.Pruebas" 
+                                     4.Salir""")
 def main_menu():
     print("Seleccione el perfil al que desea ingresar: ")
     print("1.Camper\n2.Trainer\n3.Coordinador")
@@ -19,17 +19,17 @@ def main_menu():
 def menu_camper():
     print("BIENVENIDO CAMPER")
     print("¿Que desea hacer?")
-    print("1.Ver notas\n2.Ver horario")
+    print("1.Ver notas\n2.Ver horario\n3.Salir")
 
 def menu_trainer():
     print("BIENVENIDO TRAINER")
     print("¿Que desea hacer?")
-    print("1.Ver horario\n2.Modificar notas")
+    print("1.Ver horario\n2.Modificar notas\n3.Salir")
 
 def menu_coordinador():
     print("BIENVENIDO COORDINADOR")
     print("¿Que desea hacer?")
-    print("1.Modificar proceso camper \n2.Asignar rutas\n3.Crear rutas\n4.Agregar trainer\n5.Asignar trainer\n6.Modificar riesgo camper\n7.Reportes")    
+    print("1.Modificar proceso camper \n2.Asignar rutas\n3.Crear rutas\n4.Agregar trainer\n5.Asignar trainer\n6.Modificar riesgo camper\n7.Reportes\n8.Salir")    
 
 def pruebas_admision(datos):
     doc=input("Digite su documento: ")
