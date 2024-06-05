@@ -27,7 +27,7 @@ def registrar_camper(datos):
         dixi["Riesgo"] = False
         datos["usuarios"][doc] = dixi
         print("Has sido registrado para presentar la prueba de admision")
-      
+    
 def modificar_camper (datos):
     global doc
     print("Digite el documento del camper que desea modificar: ")
@@ -40,13 +40,13 @@ def modificar_camper (datos):
         print("El documento no corresponde a ningun camper")
 
 def aprobar_camper(datos_estudiantes_registrados, datos_estudiantes_aprobados):
-    if doc in datos_estudiantes_registrados["usuarios"]:
-        roxane=datos_estudiantes_registrados["usuarios"][doc]
+        if doc in datos_estudiantes_registrados["usuarios"]:
+            roxane=datos_estudiantes_registrados["usuarios"][doc]
         if roxane["Proceso"]=="Aprobado":
             guardar_datos(datos_estudiantes_registrados, ruta_estudiantes_registrados)
             datos_estudiantes_aprobados["usuarios"][doc] = roxane
+            guardar_datos(datos_estudiantes_aprobados, ruta_estudiantes_aprobados)
             datos_estudiantes_registrados["usuarios"].pop(doc, None)
-            guardar_datos(datos_estudiantes_registrados, ruta_estudiantes_aprobados)
             guardar_datos(datos_estudiantes_registrados, ruta_estudiantes_registrados)  
             print("Estudiante aprobado movido exitosamente de registrados a aprobados.")
 
@@ -73,7 +73,6 @@ def ver_notas():
     else:
         print("Valor no encontrado!")
 
-    
 def ver_horario(datos_estudiantes_cursando):
     print("Digite su documento: ")
     doc=input()
@@ -98,3 +97,6 @@ def ver_horario(datos_estudiantes_cursando):
     else:
         print("Valor no encontrado!")
 
+def horario_camper():
+    print("Horario 6 a 1am")
+    print("Horario 2 a 10pm")

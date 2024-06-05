@@ -9,7 +9,7 @@ datos_estudiantes_cursando = cargar_datos(ruta_estudiantes_cursando)
 
 def modificar_notas(datos_estudiantes_cursando):
     cargar_datos(ruta_estudiantes_cursando)
-    print("Digite el documento del trainer: ")
+    print("Digite el documento del camper: ")
     doc=input()
     print ("¿En que ruta esta?\n1.NodeJs\n2.Java\n3.NetCore")
     opc=int(input())
@@ -52,3 +52,8 @@ def modificar_notas(datos_estudiantes_cursando):
     else:
         print("Valor no valido!")
 
+def horario_trainer():
+    print("Horario 6 a 10am")
+    print("Horario 10 a 2pm")
+    print("Horario 2 a 6pm")
+    print("Horario 6 a 10pm")

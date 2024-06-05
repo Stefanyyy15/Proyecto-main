@@ -7,7 +7,7 @@
             "Acudiente": "Mama de maluma",
             "Contacto": "3153065043",
             "Telefono fijo": "6354789",
-            "Proceso": "Cursando",
+            "Proceso": "Aprobado",
             "Riesgo": false,
             "Resultado prueba": 119.5
         },
@@ -18,7 +18,7 @@
             "Acudiente": "papi de shaki",
             "Contacto": "314789653",
             "Telefono fijo": "6543589",
-            "Proceso": "Cursando",
+            "Proceso": "Aprobado",
             "Riesgo": false,
             "Resultado prueba": 106.5
         },
@@ -29,7 +29,7 @@
             "Acudiente": "rosa",
             "Contacto": "3153065043",
             "Telefono fijo": "65897456",
-            "Proceso": "Cursando",
+            "Proceso": "Aprobado",
             "Riesgo": false,
             "Resultado prueba": 99.5
         },
@@ -40,7 +40,7 @@
             "Acudiente": "mami de kevin",
             "Contacto": "3125638044",
             "Telefono fijo": "123",
-            "Proceso": "Cursando",
+            "Proceso": "Aprobado",
             "Riesgo": false,
             "Resultado prueba": 127.0
         },
@@ -51,7 +51,7 @@
             "Acudiente": "mami de juan ",
             "Contacto": "3156789456",
             "Telefono fijo": "6987456",
-            "Proceso": "Cursando",
+            "Proceso": "Aprobado",
             "Riesgo": false,
             "Resultado prueba": 94.5
         },
@@ -62,20 +62,20 @@
             "Acudiente": "mama de prueba",
             "Contacto": "3156456465",
             "Telefono fijo": "65789523",
-            "Proceso": "Cursando",
+            "Proceso": "Aprobado",
             "Riesgo": false,
             "Resultado prueba": 110.5
+        },
+        "333": {
+            "Nombres": "Holgueeeeeeer",
+            "Apellidos": "tas tas ",
+            "Direccion": "casa de holguer",
+            "Acudiente": "mama de holguer",
+            "Contacto": "34654654",
+            "Telefono fijo": "3156456465",
+            "Proceso": "Aprobado",
+            "Riesgo": false,
+            "Resultado prueba": 118.5
         }
-    },
-    "856": {
-        "Nombres": "Groot",
-        "Apellidos": "arbol",
-        "Direccion": "selva",
-        "Acudiente": "groot mama",
-        "Contacto": "315456875654",
-        "Telefono fijo": "657894532",
-        "Proceso": "Cursando",
-        "Riesgo": false,
-        "Resultado prueba": 114.0
     }
 }

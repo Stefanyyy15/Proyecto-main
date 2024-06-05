@@ -5,9 +5,10 @@ def cargar_datos(archivo):
     try:
         with open(archivo, "r") as file:
             user = json.load(file)
+            print("Datos cargados") 
             return user
-    except Exception:
-        print("")
+    except Exception as a:
+        print("Error al cargar los datos", a )
 
 
 def guardar_datos(datos, archivo):
@@ -17,5 +18,6 @@ def guardar_datos(datos, archivo):
         file = open(archivo, "w")
         file.write(thing)
         file.close()
+        print("Datos cargados") 
     except Exception:
-        print("") 
+        print("Error al cargar los datos", Exception) 

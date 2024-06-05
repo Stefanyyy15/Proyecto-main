@@ -11,7 +11,7 @@ def menu_principal ():
     print("""                                  CAMPUSLANDS                         
                           Bienvenido a la plataforma!
                       1.Registrarse  2.Ingresar  3.Pruebas" 
-                                     4.Salir""")
+                                     0.Salir""")
 def main_menu():
     print("Seleccione el perfil al que desea ingresar: ")
     print("1.Camper\n2.Trainer\n3.Coordinador")

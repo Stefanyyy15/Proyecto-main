@@ -1,5 +1,4 @@
 from datos import *
-from menu import pedir_opc
 
 ruta_estudiantes_registrados= "registrados.json"
 datos_estudiantes_registrados= cargar_datos(ruta_estudiantes_registrados)
@@ -9,9 +8,6 @@ datos_estudiantes_aprobados= cargar_datos(ruta_estudiantes_aprobados)
 
 ruta_estudiantes_cursando= "cursando.json"
 datos_estudiantes_cursando= cargar_datos(ruta_estudiantes_cursando)
-
-ruta_de_rutas= "rutas.json"
-datos_de_rutas= cargar_datos(ruta_de_rutas)
 
 ruta_trainers= "trainer.json"
 datos_trainers= cargar_datos(ruta_trainers)
@@ -156,7 +152,6 @@ def leer_aprobados(datos_estudiantes_aprobados):
 def leer_trainers(datos_trainers):
     for i,a in datos_trainers["Trainers"].items():
         print(f" ID: {i} -- Nombre: {a['Nombre']}")
-
 
 def leer_rutas(datos_estudiantes_cursando):
     for i,a in datos_estudiantes_cursando["Rutas"].items():

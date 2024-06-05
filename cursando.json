@@ -3,7 +3,7 @@
         "NodeJs": {
             "1095304637": {
                 "Proceso": "Cursando",
-                "Riesgo": false,
+                "Riesgo": true,
                 "Resultado prueba": 119.5,
                 "Notas": {
                     "Quizes y Trabajos": 56,
@@ -27,7 +27,7 @@
         "Java": {
             "456": {
                 "Proceso": "Cursando",
-                "Riesgo": false,
+                "Riesgo": "False",
                 "Resultado prueba": 106.5,
                 "Notas": {
                     "Quizes y Trabajos": 89,
@@ -51,12 +51,12 @@
             },
             "444": {
                 "Proceso": "Cursando",
-                "Riesgo": false,
+                "Riesgo": true,
                 "Resultado prueba": 110.5,
                 "Notas": {
-                    "Quizes y Trabajos": 65,
-                    "Prueba teorica": 89,
-                    "Prueba practica(Proyecto)": 74
+                    "Quizes y Trabajos": 0,
+                    "Prueba teorica": 0,
+                    "Prueba practica(Proyecto)": 0
                 },
                 "trainers": "Roberto Hernandez"
             }
