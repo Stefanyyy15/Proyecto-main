@@ -1,5 +1,6 @@
 # Proyecto python
-Este proyecto es una aplicación para la gestión de datos de campers, coordinadores y trainers. La aplicación incluye funcionalidades para registrar, consultar y gestionar la información de estos roles. Este README proporciona una guía sobre cómo instalar y contribuir al proyecto.
+Este proyecto es una aplicación dedicada a la gestión integral de datos de campers, coordinadores y trainers. Su objetivo principal es facilitar la administración y el seguimiento de la información clave relacionada con estos roles dentro de un entorno específico, como por ejemplo, un campamento o un programa educativo. La aplicación ofrece diversas funcionalidades diseñadas para registrar, consultar y gestionar de manera eficiente la información de cada uno de estos roles.
+Este README proporciona una guía sobre cómo instalar y contribuir al proyecto.
 
 ## Tabla de contenido
 |Indice|Titulo  |
