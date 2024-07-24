@@ -31,6 +31,7 @@ Lista de tecnologías utilizadas en el proyecto:
 -   **Consultar Camper:** Permite consultar la información de un camper.
 -   **Modificar Camper:** Permite modificar la información de un camper.
 -   **Eliminar Camper:** Permite eliminar un camper del sistema.
+-   **Consultar Notas:** Permite consultar una nota de un camper.
 
 ### Gestión de Coordinadores
 
@@ -38,6 +39,18 @@ Lista de tecnologías utilizadas en el proyecto:
 -   **Consultar Coordinador:** Permite consultar la información de un coordinador.
 -   **Modificar Coordinador:** Permite modificar la información de un coordinador.
 -   **Eliminar Coordinador:** Permite eliminar un coordinador del sistema.
+-   **Registrar Camper:** Permite registrar un nuevo camper en el sistema.
+-   **Consultar Camper:** Permite consultar la información de un camper.
+-   **Modificar Camper:** Permite modificar la información de un camper.
+-   **Eliminar Camper:** Permite eliminar un camper del sistema.
+-   **Registrar Trainer:** Permite registrar un nuevo trainer en el sistema.
+-   **Consultar Trainer:** Permite consultar la información de un trainer.
+-   **Modificar Trainer:** Permite modificar la información de un trainer.
+-   **Eliminar Trainer:** Permite eliminar un trainer del sistema.
+-   **Registrar Notas:** Permite registrar una nota de un camper.
+-   **Consultar Notas:** Permite consultar una nota de un camper.
+-   **Modificar Notas:** Permite modificar una nota de un camper.
+-   **Eliminar Notas:** Permite eliminar una nota del sistema.
 
 ### Gestión de Trainers
 
@@ -45,6 +58,11 @@ Lista de tecnologías utilizadas en el proyecto:
 -   **Consultar Trainer:** Permite consultar la información de un trainer.
 -   **Modificar Trainer:** Permite modificar la información de un trainer.
 -   **Eliminar Trainer:** Permite eliminar un trainer del sistema.
+-   **Registrar Notas:** Permite registrar una nota de un camper.
+-   **Consultar Notas:** Permite consultar una nota de un camper.
+-   **Modificar Notas:** Permite modificar una nota de un camper.
+-   **Eliminar Notas:** Permite eliminar una nota del sistema.
+
 
 ### Funcionalidades Generales
 
